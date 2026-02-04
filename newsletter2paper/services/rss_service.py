@@ -405,10 +405,6 @@ class RSSService:
         except requests.RequestException as e:
             raise requests.RequestException(f"Failed to fetch RSS feed: {e}")
 
-    def get_publication_metadata(self, feed_url) -> Publication:
-        """Extract publication metadata from RSS feed."""
-        pass
-
     async def get_articles(
         self, 
         feed_url: str,
